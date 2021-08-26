@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Voir</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_log_out">Çıkış Yap</string>
+    <string name="action_complaint">Şikayet Et !</string>
+    <string name="action_delete">Sil</string>
+
+
+    <string name="action_profil_update">Bilgilerimi düzenle</string>
+    <string name="action_profil_delete">Hesabı sil !</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="title_activity_user_profil_image_show">UserProfilImageShow</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_login">Giriş Yapın</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_username">Kullanıcı Adı</string>
+    <string name="prompt_password">Parola</string>
+    <string name="prompt_new_password">Yeni Parola</string>
+    <string name="prompt_new_password2">Yeni Parola Tekrar</string>
+    <string name="prompt_name">Ad Soyad</string>
+    <string name="prompt_desciption">Açıklama</string>
+
+
+    <string name="prompt_email">Email</string>
+    <string name="prompt_save">Kaydet</string>
+
+    <string name="action_login">Giriş</string>
+    <string name="action_sing_in">Kayıt Ol</string>
+    <string name="error_incorrect_username">Kullanıcı adı en az 5 karakterden oluşmalı !</string>
+    <string name="error_invalid_email">Lütfen geçerli bir email adresi girin !</string>
+    <string name="error_invalid_username">Lütfen geçerli bir kullanıcı adı girin !</string>
+    <string name="error_invalid_password">Lütfen geçerli parola  girin !</string>
+
+    <string name="error_invalid_password6">Parola en az 6 karakterden oluşmalıdır !</string>
+    <string name="error_incorrect_password">Kullanıcı adı veye parola yanlış !</string>
+
+
+</resources>

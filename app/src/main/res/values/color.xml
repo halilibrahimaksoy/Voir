@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="gray">#ddd</color>
+    <color name="black">#000</color>
+    <color name="colorPrimary">#1c1c1c</color>
+    <color name="colorPrimaryDark">#E31B25</color>
+    <color name="colorPrimaryAccent">#1c1c1c</color>
+    <color name="colorAccent">#c8e8ff</color>
+    <color name="textColor1">#37474F</color>
+
+
+    <color name="globalTabSececlt">#FF6D00</color>
+    <color name="globalTabNoSececlt">#37474F</color>
+    <color name="userItemBacground">#009688</color>
+
+</resources>

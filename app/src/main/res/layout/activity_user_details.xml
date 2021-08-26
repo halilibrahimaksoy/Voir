@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/userItemBacground"
+    android:fitsSystemWindows="true">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tbUserDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/userItemBacground" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgUserDetailsProfilImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:civ_border_color="@color/globalTabSececlt"
+        app:civ_border_width="2dp" />
+
+    <TextView
+        android:id="@+id/txtUserDetailsUserName"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgUserDetailsProfilImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#FFF"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/txtUserDetailsName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtUserDetailsUserName"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:textColor="#DDD"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/txtUserDetailsEmail"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtUserDetailsName"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:text=""
+        android:textColor="#CCC"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/txtUserDetailsDescription"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtUserDetailsEmail"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:maxLines="2"
+        android:text=""
+        android:textColor="#CCC"
+        android:textSize="12dp" />
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/txtUserDetailsDescription"
+        android:background="@color/userItemBacground"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/globalTabSececlt"></View>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabsglobal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabBackground="@color/userItemBacground"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/globalTabSececlt"
+            app:tabIndicatorHeight="2dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/globalTabSececlt"></View>
+
+        <com.halilibrahimaksoy.voir.NonSwipeableViewPager
+            android:id="@+id/viewpagerglobal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+</RelativeLayout>

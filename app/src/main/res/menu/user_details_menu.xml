@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_log_out"
+        android:orderInCategory="100"
+        android:title="@string/action_log_out"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_profil_update"
+        android:orderInCategory="100"
+        android:title="@string/action_profil_update"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_profil_delete"
+        android:orderInCategory="100"
+        android:title="@string/action_profil_delete"
+        app:showAsAction="never" />
+</menu>

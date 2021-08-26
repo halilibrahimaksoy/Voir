@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/global_list_item_shape"
+    android:orientation="vertical">
+    <!--
+        <include
+            android:id="@+id/hedader"
+            layout="@layout/global_list_item_header"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"></include>
+
+    -->
+
+    <RelativeLayout
+        android:id="@+id/hedader"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+
+        android:background="@drawable/global_list_item_header_shape"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imgFeedProfilImage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/profil_image"
+            app:civ_border_color="@android:color/holo_orange_dark"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/txtFeedUserName"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:text="gencaksoy"
+            android:textColor="@color/textColor1"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/txtFeedLocation"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="25dp"
+
+            android:text="Çaydaçıra"
+            android:textColor="#FFF"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/txtFeedDate"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginRight="29dp"
+            android:layout_marginTop="8dp"
+            android:gravity="right"
+            android:text="1234"
+            android:textColor="@color/textColor1" />
+
+        <ImageView
+            android:id="@+id/imgFeedReplay"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_clock" />
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="360dp"
+        android:layout_height="360dp"
+        android:layout_alignLeft="@id/hedader"
+        android:layout_alignStart="@id/hedader"
+        android:layout_below="@id/hedader"
+        android:layout_centerHorizontal="true">
+
+        <com.sprylab.android.widget.TextureVideoView
+            android:id="@+id/vdvFeedVideo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"/>
+
+        <ImageView
+            android:id="@+id/imgFeedImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/profil_image" />
+
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/txtFeedTitle"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/frameLayout"
+        android:layout_alignStart="@+id/frameLayout"
+        android:layout_below="@+id/frameLayout"
+        android:layout_marginLeft="10dp"
+        android:text="Video Başlığı"
+        android:textColor="#424242"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/txtFeedDescription"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtFeedTitle"
+        android:layout_alignStart="@+id/txtFeedTitle"
+        android:layout_below="@+id/txtFeedTitle"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Video açıklaması \n #hastagler,#buraya gelecek"
+        android:textColor="#424242"
+        android:textSize="12dp" />
+
+    <ImageView
+        android:id="@+id/imgFeedLike"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+
+        android:layout_below="@+id/frameLayout"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/imgFeedDislike"
+        android:layout_toStartOf="@+id/imgFeedDislike"
+        android:src="@drawable/like" />
+
+    <TextView
+        android:id="@+id/txtFeedLike"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imgFeedLike"
+        android:layout_alignStart="@+id/imgFeedLike"
+        android:layout_below="@+id/imgFeedLike"
+        android:layout_marginBottom="10dp"
+        android:text="156"
+        android:textColor="#424242" />
+
+    <ImageView
+        android:id="@+id/imgFeedDislike"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/frameLayout"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/imgFeedMenu"
+        android:layout_toStartOf="@+id/imgFeedMenu"
+        android:src="@drawable/dislike" />
+
+    <TextView
+        android:id="@+id/txtFeedDislike"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imgFeedDislike"
+        android:layout_alignStart="@+id/imgFeedDislike"
+        android:layout_below="@+id/imgFeedDislike"
+        android:text="25"
+        android:textColor="#424242" />
+
+    <ImageView
+        android:id="@+id/imgFeedMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtFeedDislike"
+        android:layout_alignEnd="@+id/frameLayout"
+        android:layout_alignRight="@+id/frameLayout"
+        android:src="@drawable/ic_dots_vertical" />
+    <!--
+        <View
+            android:layout_width="360dp"
+            android:layout_height="2dp"
+            android:layout_alignLeft="@+id/txtFeedDescription"
+            android:layout_alignStart="@+id/txtFeedDescription"
+            android:layout_below="@+id/txtFeedDescription"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:background="#1c1c1c" />-->
+</RelativeLayout>
